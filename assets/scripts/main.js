@@ -1,0 +1,23 @@
+$(document).ready(function(){
+  $("#jobs").click(function(){
+    $(".active").removeClass('active');
+    $("#jobs").addClass('active');
+    $("#statistics-content").hide();
+    $("#about-content").hide();
+    $("#jobs-content").show();
+  });
+  $("#about").click(function(){
+    $(".active").removeClass('active');
+    $("#about").addClass('active');
+    $("#jobs-content").hide();
+    $("#statistics-content").hide();
+    $("#about-content").show();
+  });
+  $("#statistics").click(function(){
+    $(".active").removeClass('active');
+    $("#statistics").addClass('active');
+    $("#jobs-content").hide();
+    $("#about-content").hide();
+    $("#statistics-content").show();
+  });
+});

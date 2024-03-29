@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eleman.net Case</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/globals.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+
+<body>
+    <div class="container-fluid header-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header">
+                        <div class="logo">
+                            <a href="/">
+                                <svg width="177" height="28" viewBox="0 0 177 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_4)">
+                                        <path
+                                            d="M3.7846 15.1024C4.19304 13.605 4.95697 12.4273 6.10599 11.5072C7.39685 10.4748 8.89507 9.95418 10.5585 9.95418H10.7066C12.4597 9.9856 13.9759 10.5287 15.2129 11.5673C16.3108 12.4901 17.0684 13.6768 17.4706 15.1024H3.7846ZM20.8099 19.9031H17.0917L16.9643 20.1697C15.703 22.8017 13.6905 24.0962 10.8116 24.1285H10.668C8.89058 24.1285 7.35825 23.5576 5.98211 22.3825C4.76397 21.3412 4.00722 20.0055 3.72895 18.4058H21.0972V16.5512C21.0972 14.0377 20.125 11.7468 18.2094 9.73784C16.2363 7.7091 13.8628 6.59239 11.1536 6.41644C10.9292 6.40298 10.7075 6.3958 10.4911 6.3958C7.77567 6.3958 5.34476 7.41915 3.26664 9.45687C1.06734 11.6023 -0.0188509 14.2146 0.0529631 17.2307C0.0709166 18.6491 0.358173 19.9866 0.905755 21.2164C1.44436 22.4283 2.26125 23.5773 3.3205 24.6096C5.40311 26.6025 7.83581 27.6168 10.5647 27.6168C10.6096 27.6168 10.6545 27.6168 10.7084 27.6079C12.9436 27.572 14.9095 26.9364 16.7318 25.6626C18.5361 24.3969 19.8288 22.6572 20.5828 20.4965L20.7983 19.8771L20.8099 19.9031ZM26.0012 27.1599V0.161438H22.4688V27.1599H25.5299M31.7104 15.1024C32.1197 13.6059 32.8828 12.4273 34.0327 11.5072C35.3235 10.4748 36.8209 9.95418 38.4834 9.95418H38.6324C40.3855 9.9856 41.9017 10.5287 43.1387 11.5673C44.2366 12.4901 44.9951 13.6768 45.3973 15.1024H31.7104ZM48.5203 20.5243L48.7357 19.9031H45.0193L44.8937 20.1697C43.6369 22.8017 41.6261 24.0962 38.7446 24.1285H38.6001C36.8227 24.1285 35.2894 23.5576 33.9142 22.3825C32.6933 21.3412 31.9393 20.0055 31.661 18.4058H49.0284V16.5512C49.0284 14.0377 48.0589 11.7468 46.1414 9.73784C44.1665 7.7091 41.7967 6.59239 39.0857 6.41644C38.8613 6.40298 38.6458 6.3958 38.4214 6.3958C35.7104 6.3958 33.2777 7.41915 31.1951 9.45687C28.9958 11.6023 27.9186 14.2146 27.9904 17.2307C28.0084 18.6491 28.2956 19.9956 28.8432 21.2254C29.3908 22.4373 30.1987 23.5863 31.2669 24.6186C33.3495 26.6115 35.7822 27.6258 38.5112 27.6258H38.6638C40.899 27.5899 42.8739 26.9526 44.6872 25.6779C46.5005 24.4121 47.7932 22.6707 48.5382 20.5073L48.5203 20.5243ZM71.5807 6.55199C71.3401 6.53134 71.0986 6.52147 70.8643 6.52147C68.4137 6.52147 66.3759 7.60766 64.7978 9.76208C63.2179 7.60766 61.182 6.51249 58.7331 6.51249C58.4997 6.51249 58.2574 6.52147 58.015 6.53942C55.7941 6.71896 53.9728 7.54482 52.602 9.01701C51.1388 10.5431 50.3964 12.6077 50.3964 15.1481V27.1501H54.032V14.8519C54.032 13.4336 54.409 12.2756 55.19 11.324C55.962 10.3725 56.9494 9.90571 58.1972 9.90571C59.4899 9.90571 60.6209 10.3276 61.5635 11.1714H61.5725C62.524 11.9973 62.9818 13.0027 62.9818 14.2684V27.1411H66.6533V14.2873C66.6533 13.0287 67.1022 12.0161 68.0268 11.1885C69.0142 10.3357 70.1273 9.92007 71.429 9.92007C72.683 9.92007 73.7055 10.3958 74.4685 11.3357C75.2584 12.3052 75.6588 13.4928 75.6588 14.8609V27.159H79.2944V15.167C79.2944 12.6427 78.5403 10.5781 77.0565 9.02958C75.6525 7.56457 73.8195 6.73153 71.6112 6.55468M96.4023 22.0755C95.0648 23.4633 93.5208 24.1375 91.676 24.1375C91.5557 24.1375 91.4337 24.1348 91.3125 24.1285C89.4184 24.0315 87.8654 23.2963 86.5638 21.8807C85.2801 20.4803 84.6454 18.7927 84.6786 16.8627C84.7101 14.9058 85.3878 13.2989 86.7523 11.9434C88.1257 10.579 89.7415 9.91469 91.6985 9.91469C93.5477 9.91469 95.142 10.5879 96.4292 11.9345C97.7757 13.3348 98.4454 14.9327 98.4759 16.8268C98.5082 18.8645 97.8269 20.588 96.3933 22.0692M91.878 6.47659C91.7344 6.46761 91.5908 6.46761 91.4516 6.46761C88.6688 6.46761 86.2541 7.48198 84.2684 9.4838C82.1678 11.5664 81.1068 14.1158 81.1068 17.0422C81.1068 19.843 82.1032 22.3116 84.0673 24.3583C86.0108 26.387 88.4211 27.4732 91.2398 27.5809H91.6302C94.2784 27.5809 96.5998 26.6563 98.5513 24.8251V27.1339H102.016V17.0341C102.124 14.2469 101.16 11.7917 99.1617 9.73605C97.1994 7.68486 94.7542 6.58969 91.8906 6.48287M112.815 6.51608C110.234 6.51608 108.046 7.40478 106.316 9.15884C104.602 10.8976 103.731 13.0996 103.731 15.7065V27.1608H107.3V15.4363C107.3 13.9282 107.833 12.6652 108.934 11.5745C110.015 10.5 111.323 9.95508 112.821 9.95508C114.293 9.95508 115.544 10.4847 116.645 11.5745C117.764 12.6876 118.309 13.9515 118.309 15.4363V27.1599H121.873V15.7056C121.873 13.1005 121.002 10.8976 119.288 9.15884C117.555 7.40478 115.383 6.51608 112.82 6.51608M124.122 23.7039H123.649V27.1914H127.061V23.7066H126.572M137.389 7.45864C134.921 7.45864 132.829 8.30874 131.168 9.9847C129.526 11.6472 128.695 13.7531 128.695 16.2442V27.1896H132.139V15.9866C132.139 14.5548 132.65 13.3564 133.692 12.3196C134.724 11.2989 135.963 10.7809 137.39 10.7809C138.791 10.7809 139.975 11.2836 141.022 12.3196C142.086 13.377 142.602 14.5772 142.602 15.9866V27.1896H146.044V16.2442C146.044 13.7531 145.212 11.6481 143.571 9.9847C141.913 8.30874 139.836 7.45775 137.386 7.45775M151.3 15.6472C151.688 14.2379 152.413 13.1248 153.499 12.2567C154.729 11.2765 156.149 10.7791 157.731 10.7791C157.777 10.7791 157.823 10.7791 157.87 10.7809C159.539 10.8106 160.976 11.3267 162.156 12.3142C163.188 13.1849 163.907 14.3034 164.293 15.6472H151.303H151.3ZM158.302 7.36169C158.086 7.35002 157.872 7.34374 157.664 7.34374C155.07 7.34374 152.747 8.32759 150.761 10.2684C148.66 12.3205 147.628 14.8214 147.7 17.7038C147.713 19.0593 147.987 20.3448 148.511 21.5189C149.032 22.6823 149.807 23.7748 150.827 24.7667C152.814 26.677 155.145 27.6429 157.749 27.6429H157.883C160.02 27.607 161.905 27.0001 163.637 25.7829C165.364 24.5728 166.602 22.913 167.32 20.8457L167.535 20.2263H163.944L163.813 20.492C162.61 22.9947 160.698 24.2245 157.966 24.2551H157.831C156.141 24.2551 154.68 23.7129 153.374 22.5944C152.222 21.6105 151.504 20.3502 151.238 18.8403H167.8V17.0521C167.8 14.6481 166.875 12.4578 165.042 10.5386C163.157 8.59959 160.888 7.53136 158.301 7.36259L158.302 7.36169ZM176.3 7.84644H172.514V1.42806H169.066V21.4013C169.066 23.4391 169.692 24.9992 170.919 26.0378C172.128 27.0594 173.935 27.5774 176.296 27.5774H176.769V24.6087H176.298C173.718 24.6087 172.516 23.457 172.516 20.9839V11.07H176.771V7.84554H176.295L176.3 7.84644Z"
+                                            fill="#217FE7" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_4">
+                                            <rect width="176.842" height="28" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <a href="#">
+                                İş İlanları
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3_2)">
+                                        <path
+                                            d="M7.99993 8.78093L11.2998 5.48112L12.2426 6.42392L7.99993 10.6666L3.75732 6.42392L4.70013 5.48112L7.99993 8.78093Z"
+                                            fill="#364153" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3_2">
+                                            <rect width="16" height="16" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                Şirketler
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3_2)">
+                                        <path
+                                            d="M7.99993 8.78093L11.2998 5.48112L12.2426 6.42392L7.99993 10.6666L3.75732 6.42392L4.70013 5.48112L7.99993 8.78093Z"
+                                            fill="#364153" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3_2">
+                                            <rect width="16" height="16" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                Araçlar
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3_2)">
+                                        <path
+                                            d="M7.99993 8.78093L11.2998 5.48112L12.2426 6.42392L7.99993 10.6666L3.75732 6.42392L4.70013 5.48112L7.99993 8.78093Z"
+                                            fill="#364153" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3_2">
+                                            <rect width="16" height="16" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-light">Üye Ol</a>
+                            <a href="#" class="btn btn-light">Giriş Yap</a>
+                            <a href="#" class="btn btn-primary">İş İlanı Yayınla</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid breadcrumb-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb">
+                        <a href="/">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_20_216)">
+                                    <path
+                                        d="M8.66667 12.6667H12.6667V6.6521L8 3.02247L3.33333 6.6521V12.6667H7.33333V8.66667H8.66667V12.6667ZM14 13.3333C14 13.7015 13.7015 14 13.3333 14H2.66667C2.29848 14 2 13.7015 2 13.3333V6.32605C2 6.12032 2.09498 5.92611 2.25737 5.79981L7.59073 1.65166C7.83147 1.46442 8.16853 1.46442 8.40927 1.65166L13.7426 5.79981C13.905 5.92611 14 6.12032 14 6.32605V13.3333Z"
+                                        fill="#364153" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_20_216">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <div class="arrow">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_20_219)">
+                                    <path
+                                        d="M8.78113 8.00047L5.48128 4.70062L6.42409 3.75781L10.6667 8.00047L6.42409 12.2431L5.48128 11.3003L8.78113 8.00047Z"
+                                        fill="#364153" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_20_219">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <a href="#">Şirketler</a>
+                        <div class="arrow">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_20_219)">
+                                    <path
+                                        d="M8.78113 8.00047L5.48128 4.70062L6.42409 3.75781L10.6667 8.00047L6.42409 12.2431L5.48128 11.3003L8.78113 8.00047Z"
+                                        fill="#364153" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_20_219">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <a href="#">Domino's Pizza</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid page-title-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="page-title-info">
+                        <div class="image">
+                            <img width="120px" height="120px" src="/assets/images/dominos-logo.png"
+                                alt="Domino's Pizza Logo">
+                        </div>
+                        <div class="text">
+                            <h1>Domino's Pizza</h1>
+                            <div class="badges">
+                                <div class="badge">
+                                    <img src="/assets/images/icon-rest.svg" alt="">
+                                    Restorancılık
+                                </div>
+                                <div class="badge">
+                                    <img src="/assets/images/icon-map.svg" alt="">
+                                    İstanbul Avrupa
+                                </div>
+                                <div class="badge">
+                                    <img src="/assets/images/icon-link.svg" alt="">
+                                    dominos.com.tr
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="page-title-buttons">
+                        <button class="btn btn-primary">
+                            <img src="/assets/images/icon-follow.svg" alt="">
+                            Takip Et
+                        </button>
+                        <button class="btn btn-light">
+                            <img src="/assets/images/icon-like.svg" alt="">
+                        </button>
+                        <button class="btn btn-light">
+                            <img src="/assets/images/icon-share.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid tab-buttons-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tab-buttons">
+                        <button class="btn btn-tab active" id="jobs">
+                            Domino's Pizza İlanları
+                        </button>
+                        <button class="btn btn-tab" id="about">
+                            Firma Hakkında
+                        </button>
+                        <button class="btn btn-tab" id="statistics">
+                            İstatistikler
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container content">
+        <div class="row">
+            <div class="col-lg-8" id="jobs-content">
+                <div class="jobs">
+                    <h2>10 Aktif İş İlanı</h2>
+
+                    <a href="#" class="job-card">
+                        <div class="job-logo">
+                            <img width="48px" height="48px" src="/assets/images/dominos-logo.png" alt="">
+                        </div>
+                        <div class="job-info">
+                            <h3>Ankara Üretim Tesisi - Üretim Elemanı</h3>
+                            <p>Domino's Pizza</p>
+                            <div class="job-badges">
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-map.svg" alt="">
+                                    Ankara
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-time.svg" alt="">
+                                    Tam Zamanlı
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-building.svg" alt="">
+                                    İş Yerinde
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-time">
+                            <p>2 saat önce</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="job-card">
+                        <div class="job-logo">
+                            <img width="48px" height="48px" src="/assets/images/dominos-logo.png" alt="">
+                        </div>
+                        <div class="job-info">
+                            <h3>Ankara Üretim Tesisi - Depo Elemanı</h3>
+                            <p>Domino's Pizza</p>
+                            <div class="job-badges">
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-map.svg" alt="">
+                                    Ankara
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-time.svg" alt="">
+                                    Tam Zamanlı
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-building.svg" alt="">
+                                    İş Yerinde
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-time">
+                            <p>2 saat önce</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="job-card">
+                        <div class="job-logo">
+                            <img width="48px" height="48px" src="/assets/images/dominos-logo.png" alt="">
+                        </div>
+                        <div class="job-info">
+                            <h3>Vardiya - Asistan Müdür - Beykoz</h3>
+                            <p>Domino's Pizza</p>
+                            <div class="job-badges">
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-map.svg" alt="">
+                                    Ankara
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-time.svg" alt="">
+                                    Tam Zamanlı
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-building.svg" alt="">
+                                    İş Yerinde
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-time">
+                            <p>2 saat önce</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="job-card">
+                        <div class="job-logo">
+                            <img width="48px" height="48px" src="/assets/images/dominos-logo.png" alt="">
+                        </div>
+                        <div class="job-info">
+                            <h3>Restoran Müdürü Adayları - Beykoz</h3>
+                            <p>Domino's Pizza</p>
+                            <div class="job-badges">
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-map.svg" alt="">
+                                    İstanbul Anadolu
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-time.svg" alt="">
+                                    Tam Zamanlı
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-building.svg" alt="">
+                                    İş Yerinde
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-time">
+                            <p>2 saat önce</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="job-card">
+                        <div class="job-logo">
+                            <img width="48px" height="48px" src="/assets/images/dominos-logo.png" alt="">
+                        </div>
+                        <div class="job-info">
+                            <h3>Restoran Yönetici Adayları - Bağcılar</h3>
+                            <p>Domino's Pizza</p>
+                            <div class="job-badges">
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-map.svg" alt="">
+                                    İstanbul Avrupa
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-time.svg" alt="">
+                                    Tam Zamanlı
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-building.svg" alt="">
+                                    İş Yerinde
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-time">
+                            <p>2 saat önce</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="job-card">
+                        <div class="job-logo">
+                            <img width="48px" height="48px" src="/assets/images/dominos-logo.png" alt="">
+                        </div>
+                        <div class="job-info">
+                            <h3>Ankara Üretim Tesisi - Üretim Elemanı</h3>
+                            <p>Domino's Pizza</p>
+                            <div class="job-badges">
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-map.svg" alt="">
+                                    Ankara
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-time.svg" alt="">
+                                    Tam Zamanlı
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-building.svg" alt="">
+                                    İş Yerinde
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-time">
+                            <p>2 saat önce</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="job-card">
+                        <div class="job-logo">
+                            <img width="48px" height="48px" src="/assets/images/dominos-logo.png" alt="">
+                        </div>
+                        <div class="job-info">
+                            <h3>Ankara Üretim Tesisi - Depo Elemanı</h3>
+                            <p>Domino's Pizza</p>
+                            <div class="job-badges">
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-map.svg" alt="">
+                                    Ankara
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-time.svg" alt="">
+                                    Tam Zamanlı
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-building.svg" alt="">
+                                    İş Yerinde
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-time">
+                            <p>2 saat önce</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="job-card">
+                        <div class="job-logo">
+                            <img width="48px" height="48px" src="/assets/images/dominos-logo.png" alt="">
+                        </div>
+                        <div class="job-info">
+                            <h3>Vardiya - Asistan Müdür - Beykoz</h3>
+                            <p>Domino's Pizza</p>
+                            <div class="job-badges">
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-map.svg" alt="">
+                                    Ankara
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-time.svg" alt="">
+                                    Tam Zamanlı
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-building.svg" alt="">
+                                    İş Yerinde
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-time">
+                            <p>2 saat önce</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="job-card">
+                        <div class="job-logo">
+                            <img width="48px" height="48px" src="/assets/images/dominos-logo.png" alt="">
+                        </div>
+                        <div class="job-info">
+                            <h3>Restoran Müdürü Adayları - Beykoz</h3>
+                            <p>Domino's Pizza</p>
+                            <div class="job-badges">
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-map.svg" alt="">
+                                    İstanbul Anadolu
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-time.svg" alt="">
+                                    Tam Zamanlı
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-building.svg" alt="">
+                                    İş Yerinde
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-time">
+                            <p>2 saat önce</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="job-card">
+                        <div class="job-logo">
+                            <img width="48px" height="48px" src="/assets/images/dominos-logo.png" alt="">
+                        </div>
+                        <div class="job-info">
+                            <h3>Restoran Yönetici Adayları - Bağcılar</h3>
+                            <p>Domino's Pizza</p>
+                            <div class="job-badges">
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-map.svg" alt="">
+                                    İstanbul Avrupa
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-time.svg" alt="">
+                                    Tam Zamanlı
+                                </div>
+                                <div class="job-badge">
+                                    <img src="/assets/images/icon-building.svg" alt="">
+                                    İş Yerinde
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-time">
+                            <p>2 saat önce</p>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+            <div class="col-lg-8" id="about-content" style="display: none;">
+                <div>
+                    about content
+                </div>
+            </div>
+            <div class="col-lg-8" id="statistics-content" style="display: none;">
+                <div>
+                    statistics content
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <div class="sidebar-card">
+                        <div class="sidebar-card-header">
+                            Hesaplama Araçları
+                        </div>
+                        <div class="sidebar-card-body">
+                            <a href="#">
+                                Tazminat Hesaplama
+                                <img src="assets/images/icon-sidebar-arrow.svg" alt="">
+                            </a>
+                            <a href="#">
+                                Kıdem Tazminatı Hesaplama
+                                <img src="assets/images/icon-sidebar-arrow.svg" alt="">
+                            </a>
+                            <a href="#">
+                                İhbar Tazminatı Hesaplama
+                                <img src="assets/images/icon-sidebar-arrow.svg" alt="">
+                            </a>
+                            <a href="#">
+                                Maaş Hesaplama
+                                <img src="assets/images/icon-sidebar-arrow.svg" alt="">
+                            </a>
+                            <a href="#">
+                                Net Maaş Hesaplama
+                                <img src="assets/images/icon-sidebar-arrow.svg" alt="">
+                            </a>
+                            <a href="#">
+                                Brüt Maaş Hesaplama
+                                <img src="assets/images/icon-sidebar-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="cta">
+                    <div class="text">
+                        <h4>Aradığınız "Domino's Pizza" İlanını Hemen Bulun!</h4>
+                        <p>400 Bin firma ve 20 Bin aktif iş ilanı ile her sektörden iş ilanı Eleman.net'te. Hemen
+                            özgeçmişinizi oluşturun, ilanları
+                            inceleyin, başvurunuzu yapın ve aradığınız işe ulaşın.</p>
+                        <a href="#" class="btn btn-primary">
+                            Hemen Özgeçmiş Oluştur
+                        </a>
+                    </div>
+                    <div class="image">
+                        <img width="526px" src="/assets/images/cta-img.jpg" alt="CTA Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container clients">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="client">
+                    <img src="/assets/images/client-1.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="client">
+                    <img src="/assets/images/client-2.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="client">
+                    <img src="/assets/images/client-3.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="client">
+                    <img src="/assets/images/client-4.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="client">
+                    <img src="/assets/images/client-5.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="client">
+                    <img src="/assets/images/client-6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container footer">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer-info">
+                    <a href="/">
+                        <svg width="177" height="28" viewBox="0 0 177 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_4)">
+                                <path
+                                    d="M3.7846 15.1024C4.19304 13.605 4.95697 12.4273 6.10599 11.5072C7.39685 10.4748 8.89507 9.95418 10.5585 9.95418H10.7066C12.4597 9.9856 13.9759 10.5287 15.2129 11.5673C16.3108 12.4901 17.0684 13.6768 17.4706 15.1024H3.7846ZM20.8099 19.9031H17.0917L16.9643 20.1697C15.703 22.8017 13.6905 24.0962 10.8116 24.1285H10.668C8.89058 24.1285 7.35825 23.5576 5.98211 22.3825C4.76397 21.3412 4.00722 20.0055 3.72895 18.4058H21.0972V16.5512C21.0972 14.0377 20.125 11.7468 18.2094 9.73784C16.2363 7.7091 13.8628 6.59239 11.1536 6.41644C10.9292 6.40298 10.7075 6.3958 10.4911 6.3958C7.77567 6.3958 5.34476 7.41915 3.26664 9.45687C1.06734 11.6023 -0.0188509 14.2146 0.0529631 17.2307C0.0709166 18.6491 0.358173 19.9866 0.905755 21.2164C1.44436 22.4283 2.26125 23.5773 3.3205 24.6096C5.40311 26.6025 7.83581 27.6168 10.5647 27.6168C10.6096 27.6168 10.6545 27.6168 10.7084 27.6079C12.9436 27.572 14.9095 26.9364 16.7318 25.6626C18.5361 24.3969 19.8288 22.6572 20.5828 20.4965L20.7983 19.8771L20.8099 19.9031ZM26.0012 27.1599V0.161438H22.4688V27.1599H25.5299M31.7104 15.1024C32.1197 13.6059 32.8828 12.4273 34.0327 11.5072C35.3235 10.4748 36.8209 9.95418 38.4834 9.95418H38.6324C40.3855 9.9856 41.9017 10.5287 43.1387 11.5673C44.2366 12.4901 44.9951 13.6768 45.3973 15.1024H31.7104ZM48.5203 20.5243L48.7357 19.9031H45.0193L44.8937 20.1697C43.6369 22.8017 41.6261 24.0962 38.7446 24.1285H38.6001C36.8227 24.1285 35.2894 23.5576 33.9142 22.3825C32.6933 21.3412 31.9393 20.0055 31.661 18.4058H49.0284V16.5512C49.0284 14.0377 48.0589 11.7468 46.1414 9.73784C44.1665 7.7091 41.7967 6.59239 39.0857 6.41644C38.8613 6.40298 38.6458 6.3958 38.4214 6.3958C35.7104 6.3958 33.2777 7.41915 31.1951 9.45687C28.9958 11.6023 27.9186 14.2146 27.9904 17.2307C28.0084 18.6491 28.2956 19.9956 28.8432 21.2254C29.3908 22.4373 30.1987 23.5863 31.2669 24.6186C33.3495 26.6115 35.7822 27.6258 38.5112 27.6258H38.6638C40.899 27.5899 42.8739 26.9526 44.6872 25.6779C46.5005 24.4121 47.7932 22.6707 48.5382 20.5073L48.5203 20.5243ZM71.5807 6.55199C71.3401 6.53134 71.0986 6.52147 70.8643 6.52147C68.4137 6.52147 66.3759 7.60766 64.7978 9.76208C63.2179 7.60766 61.182 6.51249 58.7331 6.51249C58.4997 6.51249 58.2574 6.52147 58.015 6.53942C55.7941 6.71896 53.9728 7.54482 52.602 9.01701C51.1388 10.5431 50.3964 12.6077 50.3964 15.1481V27.1501H54.032V14.8519C54.032 13.4336 54.409 12.2756 55.19 11.324C55.962 10.3725 56.9494 9.90571 58.1972 9.90571C59.4899 9.90571 60.6209 10.3276 61.5635 11.1714H61.5725C62.524 11.9973 62.9818 13.0027 62.9818 14.2684V27.1411H66.6533V14.2873C66.6533 13.0287 67.1022 12.0161 68.0268 11.1885C69.0142 10.3357 70.1273 9.92007 71.429 9.92007C72.683 9.92007 73.7055 10.3958 74.4685 11.3357C75.2584 12.3052 75.6588 13.4928 75.6588 14.8609V27.159H79.2944V15.167C79.2944 12.6427 78.5403 10.5781 77.0565 9.02958C75.6525 7.56457 73.8195 6.73153 71.6112 6.55468M96.4023 22.0755C95.0648 23.4633 93.5208 24.1375 91.676 24.1375C91.5557 24.1375 91.4337 24.1348 91.3125 24.1285C89.4184 24.0315 87.8654 23.2963 86.5638 21.8807C85.2801 20.4803 84.6454 18.7927 84.6786 16.8627C84.7101 14.9058 85.3878 13.2989 86.7523 11.9434C88.1257 10.579 89.7415 9.91469 91.6985 9.91469C93.5477 9.91469 95.142 10.5879 96.4292 11.9345C97.7757 13.3348 98.4454 14.9327 98.4759 16.8268C98.5082 18.8645 97.8269 20.588 96.3933 22.0692M91.878 6.47659C91.7344 6.46761 91.5908 6.46761 91.4516 6.46761C88.6688 6.46761 86.2541 7.48198 84.2684 9.4838C82.1678 11.5664 81.1068 14.1158 81.1068 17.0422C81.1068 19.843 82.1032 22.3116 84.0673 24.3583C86.0108 26.387 88.4211 27.4732 91.2398 27.5809H91.6302C94.2784 27.5809 96.5998 26.6563 98.5513 24.8251V27.1339H102.016V17.0341C102.124 14.2469 101.16 11.7917 99.1617 9.73605C97.1994 7.68486 94.7542 6.58969 91.8906 6.48287M112.815 6.51608C110.234 6.51608 108.046 7.40478 106.316 9.15884C104.602 10.8976 103.731 13.0996 103.731 15.7065V27.1608H107.3V15.4363C107.3 13.9282 107.833 12.6652 108.934 11.5745C110.015 10.5 111.323 9.95508 112.821 9.95508C114.293 9.95508 115.544 10.4847 116.645 11.5745C117.764 12.6876 118.309 13.9515 118.309 15.4363V27.1599H121.873V15.7056C121.873 13.1005 121.002 10.8976 119.288 9.15884C117.555 7.40478 115.383 6.51608 112.82 6.51608M124.122 23.7039H123.649V27.1914H127.061V23.7066H126.572M137.389 7.45864C134.921 7.45864 132.829 8.30874 131.168 9.9847C129.526 11.6472 128.695 13.7531 128.695 16.2442V27.1896H132.139V15.9866C132.139 14.5548 132.65 13.3564 133.692 12.3196C134.724 11.2989 135.963 10.7809 137.39 10.7809C138.791 10.7809 139.975 11.2836 141.022 12.3196C142.086 13.377 142.602 14.5772 142.602 15.9866V27.1896H146.044V16.2442C146.044 13.7531 145.212 11.6481 143.571 9.9847C141.913 8.30874 139.836 7.45775 137.386 7.45775M151.3 15.6472C151.688 14.2379 152.413 13.1248 153.499 12.2567C154.729 11.2765 156.149 10.7791 157.731 10.7791C157.777 10.7791 157.823 10.7791 157.87 10.7809C159.539 10.8106 160.976 11.3267 162.156 12.3142C163.188 13.1849 163.907 14.3034 164.293 15.6472H151.303H151.3ZM158.302 7.36169C158.086 7.35002 157.872 7.34374 157.664 7.34374C155.07 7.34374 152.747 8.32759 150.761 10.2684C148.66 12.3205 147.628 14.8214 147.7 17.7038C147.713 19.0593 147.987 20.3448 148.511 21.5189C149.032 22.6823 149.807 23.7748 150.827 24.7667C152.814 26.677 155.145 27.6429 157.749 27.6429H157.883C160.02 27.607 161.905 27.0001 163.637 25.7829C165.364 24.5728 166.602 22.913 167.32 20.8457L167.535 20.2263H163.944L163.813 20.492C162.61 22.9947 160.698 24.2245 157.966 24.2551H157.831C156.141 24.2551 154.68 23.7129 153.374 22.5944C152.222 21.6105 151.504 20.3502 151.238 18.8403H167.8V17.0521C167.8 14.6481 166.875 12.4578 165.042 10.5386C163.157 8.59959 160.888 7.53136 158.301 7.36259L158.302 7.36169ZM176.3 7.84644H172.514V1.42806H169.066V21.4013C169.066 23.4391 169.692 24.9992 170.919 26.0378C172.128 27.0594 173.935 27.5774 176.296 27.5774H176.769V24.6087H176.298C173.718 24.6087 172.516 23.457 172.516 20.9839V11.07H176.771V7.84554H176.295L176.3 7.84644Z"
+                                    fill="#217FE7" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_4">
+                                    <rect width="176.842" height="28" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <p>
+                        İş ilanları sitesi Eleman.net, 2005 yılında kurulduğunu günden bu yana firmalara aradığı
+                        nitelikli elemanı sağlarken,
+                        adayların en hızlı şekilde istihdam edilmesini amaçlar.
+                    </p>
+                    <div class="contact">
+                        <a href="#" class="contact-item">
+                            <img src="/assets/images/icon-phone.svg" alt="">
+                            0216 606 14 12
+                        </a>
+                        <a href="#" class="contact-item">
+                            <img src="/assets/images/icon-envelope.svg" alt="">
+                            bilgi@eleman.net
+                        </a>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="btn btn-light">
+                            <img src="/assets/images/icon-facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="btn btn-light">
+                            <img src="/assets/images/icon-twitter-x.svg" alt="">
+                        </a>
+                        <a href="#" class="btn btn-light">
+                            <img src="/assets/images/icon-instagram.svg" alt="">
+                        </a>
+                        <a href="#" class="btn btn-light">
+                            <img src="/assets/images/icon-linkedin.svg" alt="">
+                        </a>
+                        <a href="#" class="btn btn-light">
+                            <img src="/assets/images/icon-youtube.svg" alt="">
+                        </a>
+                        <a href="#" class="btn btn-light">
+                            <img src="/assets/images/icon-whatsapp.svg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="footer-menus">
+                    <div class="menu">
+                        <h5>İş Arayan İşlemleri</h5>
+                        <a href="#">İş İlanları</a>
+                        <a href="#">İstanbul İş İlanları</a>
+                        <a href="#">Depremzede İş İlanları</a>
+                        <a href="#">İş Arayan Girişi</a>
+                        <a href="#">Özgeçmiş Oluştur</a>
+                        <a href="#">CV Oluştur</a>
+                        <a href="#">İş Rehberi</a>
+                        <a href="#">Meslek Rehberi</a>
+                        <a href="#">Maaşlar</a>
+                        <a href="#">Maaş Hesapla</a>
+                        <a href="#">Üniversite Rehberi</a>
+                        <a href="#">Üniversite Bölümleri</a>
+                        <a href="#">AVM Rehberi</a>
+                        <a href="#">Marka Rehberi</a>
+                        <a href="#">Özgeçmiş Rehberi</a>
+                        <a href="#">Bildirimler</a>
+                    </div>
+                    <div class="menu">
+                        <h5>Firma İşlemleri</h5>
+                        <a href="#">İş İlanı Yayınla</a>
+                        <a href="#">Firma Üyeliği</a>
+                        <a href="#">Firma Giriş</a>
+                        <a href="#">İşveren Girişi</a>
+                        <a href="#">İstihdam Ödülleri</a>
+                        <a href="#">Avantajlar ve Fırsatlar</a>
+                        <a href="#">Eleman Bulma Rehberi</a>
+                    </div>
+                    <div class="menu">
+                        <h5>Kurumsal</h5>
+                        <a href="#">Eleman.net Hakkında</a>
+                        <a href="#">Reklam Verin</a>
+                        <a href="#">Kurumsal Dergi Emag</a>
+                        <a href="#">İletişim</a>
+                    </div>
+                    <div class="menu">
+                        <h5>Site Kullanımı</h5>
+                        <a href="#">Site Kullanım Şartları</a>
+                        <a href="#">Garanti, İade, İptal Bilgileri</a>
+                        <a href="#">Gizlilik ve Üyelik Koşulları</a>
+                        <a href="#">Kişisel Verilerin Korunması</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-bottom-box">
+                        <img src="/assets/images/iskur-logo.png" alt="">
+                        <p>Piko Danışmanlık Hizmetleri, Türkiye İş Kurumu’nun 20.06.2023 tarih ve 606 numaralı izin
+                            belgesi ile faaliyet
+                            göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınması yasaktır.
+                            Şikayetleriniz için, İstanbul İŞKUR
+                            İl Müdürlüğü Kadıköy Hizmet Merkezine Başvurabilirsiniz. İşKur Tel: 0216 418 34 55 Eğitim
+                            mah. 1.Açıkgöz sok. No:3
+                            KADIKÖY/İSTANBUL</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 ms-auto">
+                    <div class="footer-bottom-box">
+                        <img src="/assets/images/gd-logo.png" alt="">
+                        <p>
+                            Eleman.net © 2005 - 2024 <br>Kariyer için <a href="#">iş ilanları</a> ve eleman ilanları CV
+                            oluştur, iş
+                            başvurusu
+                            yap, hemen işin olsun. Tüm
+                            şehirlerden iş ilanları için, iş ilanı arama sayfasını kullanabilirsin. Aradığın iş,
+                            eleman.net iş ilanları ve eleman
+                            ilanları sitesinde.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="/assets/scripts/main.js"></script>
+</body>
+
+</html>
